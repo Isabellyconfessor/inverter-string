@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="inverter-string.css" type="text/css">
+    </head>
+    
+    <body>
+        <p class="originalString">String original: <span id="originalString">Target Sistemas</span></p>
+        <button onclick="reverseString()">Inverter</button>
+        <p class="invertedString">String invertida: <span id="invertedString"></span></p>
+
+        <script>
+            function reverseString() {
+                var original = document.getElementById("originalString").innerHTML;
+                var inverted = "";
+                for (var i = original.length - 1; i >= 0; i--) {
+                    inverted += original[i];
+                 }
+                document.getElementById("invertedString").innerHTML = inverted;
+            }
+        </script>
+
+    </body>
+</html>
